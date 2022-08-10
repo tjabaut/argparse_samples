@@ -1,17 +1,5 @@
 import argparse
-
-# # Create the Parser
-# parser = argparse.ArgumentParser()
-
-# # Add the Arguments
-# parser.add_argument('--foo')
-
-# # Execute the parse_args() method
-# args = parser.parse_args(['--foo', 'BAR'])
-
-# # Print the value(s) of the namespacep
-# print(vars(args))
-
+from ast import parse
 
 # create the top-level parser
 parser = argparse.ArgumentParser(prog='PROG')
@@ -30,3 +18,4 @@ parser_b.add_argument('--baz', choices='XYZ', help='baz help')
 parser.parse_args(['a', '12'])
 
 parser.parse_args(['--foo', 'b', '--baz', 'Z'])
+# parser.print_help()
